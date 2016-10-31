@@ -14,15 +14,9 @@ namespace Infected_Shop
         public void AddEntry(Entity e)
         {
             if (!_bankEntrys.ContainsKey(e.GUID))
-            {
                 _bankEntrys.Add(e.GUID, e.GetMoney());
-                File.AppendAllText("AddEntry_Dump.txt", e.Name + "|" + e.GUID + "|" + e.GetMoney() + "| Contains" + Environment.NewLine);
-            }
             else
-            {
                 _bankEntrys[e.GUID] = e.GetMoney();
-                File.AppendAllText("AddEntry_Dump.txt", e.Name + "|" + e.GUID + "|" + e.GetMoney() + "| Does not Contain" + Environment.NewLine);
-            }
         }
 
         public bool GetEntry(Entity e)
@@ -30,12 +24,10 @@ namespace Infected_Shop
             if (_bankEntrys.ContainsKey(e.GUID))
             {
                 e.SetMoney(_bankEntrys[e.GUID]);
-                File.AppendAllText("GetEntry_Dump.txt", e.Name + "|" + e.GUID + "|" + e.GetMoney() + "| true" + Environment.NewLine);
                 return true;
             }
             else
-                File.AppendAllText("GetEntry_Dump.txt", e.Name + "|" + e.GUID + "|" + e.GetMoney() + "| false" + Environment.NewLine);
-            return false;
+                return false;
         }
 
         public bool Contains(Entity e)
@@ -51,11 +43,8 @@ namespace Infected_Shop
             try
             {
                 File.WriteAllText(pathFile, string.Empty);
-                foreach(var line in _bankEntrys)
-                {
+                foreach (var line in _bankEntrys)
                     File.AppendAllText(pathFile, line.Key + "|" + line.Value + Environment.NewLine);
-                    File.AppendAllText("SaveToFile_Dump.txt", line.Key + "|" + line.Value + Environment.NewLine);
-                }
             }
             catch(Exception e)
             {
@@ -78,7 +67,6 @@ namespace Infected_Shop
                         long tmp_guid = long.Parse(tmp[0]);
                         int tmp_money = int.Parse(tmp[1]);
                         _bankEntrys.Add(tmp_guid, tmp_money);
-                        File.AppendAllText("ReadFromFile_Dump.txt", tmp_guid + "|" + tmp_money + "|" + Environment.NewLine);
                     }
                     catch(Exception e)
                     {

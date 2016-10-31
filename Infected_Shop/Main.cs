@@ -116,10 +116,7 @@ namespace Infected_Shop
         private void InfectedShop_PlayerConnected(Entity obj)
         {
             if (!Bank.GetEntry(obj))
-            {
-                File.AppendAllText("PlayerConnected_Dump.txt", obj.Name + "|" + obj.GUID + "|" + obj.GetMoney() + "| Does not contain" + Environment.NewLine);
                 obj.SetMoney(1000);
-            }
 
             HudHandler.CreateHud(obj);
             obj.OnInterval(100, ent =>
