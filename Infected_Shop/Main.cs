@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using InfinityScript;
 using System.IO;
 
+/*
+ * Wanted to take a note that IS 1.0 is messed up as hell and I had to use some "non-beautiful" approaches because it was bugging too bad
+ * */
 namespace Infected_Shop
 {
     public class InfectedShop : BaseScript
