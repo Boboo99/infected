@@ -1,0 +1,11 @@
+C:\Users\TheFreezeQc\Desktop\Infected\Infected_Shop\bin\Debug\Infected_Shop.dll
+C:\Users\TheFreezeQc\Desktop\Infected\Infected_Shop\bin\Debug\Infected_Shop.pdb
+C:\Users\TheFreezeQc\Desktop\Infected\Infected_Shop\bin\Debug\InfinityScript.dll
+C:\Users\TheFreezeQc\Desktop\Infected\Infected_Shop\obj\Debug\Infected_Shop.csprojResolveAssemblyReference.cache
+C:\Users\TheFreezeQc\Desktop\Infected\Infected_Shop\obj\Debug\Infected_Shop.dll
+C:\Users\TheFreezeQc\Desktop\Infected\Infected_Shop\obj\Debug\Infected_Shop.pdb
+C:\Users\Arnie\Desktop\Infected\Infected_Shop\bin\Debug\Infected_Shop.dll
+C:\Users\Arnie\Desktop\Infected\Infected_Shop\bin\Debug\Infected_Shop.pdb
+C:\Users\Arnie\Desktop\Infected\Infected_Shop\obj\Debug\Infected_Shop.csprojResolveAssemblyReference.cache
+C:\Users\Arnie\Desktop\Infected\Infected_Shop\obj\Debug\Infected_Shop.dll
+C:\Users\Arnie\Desktop\Infected\Infected_Shop\obj\Debug\Infected_Shop.pdb
